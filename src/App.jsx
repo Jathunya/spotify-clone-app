@@ -5,8 +5,8 @@ import Display from './components/Display'
 
 const App = () => {
   return (
-    <div className='h-screen bg-amber-800'>
-      <div className='h-[80%] flex'>
+    <div className='h-screen bg-black'>
+      <div className='h-[90%] flex'>
         <Sidebar />
         <Display />
       </div>

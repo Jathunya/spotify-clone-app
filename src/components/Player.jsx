@@ -28,17 +28,17 @@ const Player = () => {
             </div>
         </div>
         <div className='hidden lg:flex items-center gap-2 opacity-75'>
-            <img className='w-4 cursor-pointer' src={assets.play_icon}></img>
-            <img className='w-4 cursor-pointer' src={assets.mic_icon}></img>
-            <img className='w-4 cursor-pointer' src={assets.queue_icon}></img>
-            <img className='w-4 cursor-pointer' src={assets.speaker_icon}></img>
-            <img className='w-4 cursor-pointer' src={assets.volume_icon}></img>
+            <img className='w-4 cursor-pointer' src={assets.plays_icon} alt=''/>
+            <img className='w-4 cursor-pointer' src={assets.mic_icon} alt=''/>
+            <img className='w-4 cursor-pointer' src={assets.queue_icon} alt=''/>
+            <img className='w-4 cursor-pointer' src={assets.speaker_icon} alt=''/>
+            <img className='w-4 cursor-pointer' src={assets.volume_icon} alt=''/>
             <div className='w-20 bg-slate-50 h-1 rounded'>
 
             </div>
-            <img className='w-4 cursor-pointer' src={assets.mini_player_icon.play_icon}></img>
-            <img className='w-4 cursor-pointer' src={assets.zoom_icon}></img>
-             </div>
+            <img className='w-4 cursor-pointer' src={assets.mini_player_icon}/>
+            <img className='w-4 cursor-pointer' src={assets.zoom_icon}/>
+        </div>
     </div>
   )
 }
