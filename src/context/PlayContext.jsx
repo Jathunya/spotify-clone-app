@@ -5,14 +5,14 @@ export const PlayerContext = createContext();
 
 
 const PlayerContextProvider = (props) => {
-    
+
       const audioRef = useRef();
       const seekBg = useRef();
       const seekBar = useRef();
 
-      const [track,setTrack] = useState(songsData[0]);
-      const [playStatus,setPlayerStatus] = useState(false);
-      const [time,setTime] = useState({
+      const [track, setTrack] = useState(songsData[0]);
+      const [playStatus, setPlayerStatus] = useState(false);
+      const [time, setTime] = useState({
         currentTime:{
             second:0,
             minute:0
@@ -38,6 +38,25 @@ const PlayerContextProvider = (props) => {
         setPlayerStatus(true);
       }
 
+      const previous = async () => {
+        if(track.id > 0){
+            await setTrack(songsData[track.id - 1]);
+            await audioRef.current.play();
+            setPlayerStatus(true);
+        }
+      }
+
+        const next = async () => {
+        if(track.id < songsData.length - 1){
+            await setTrack(songsData[track.id + 1]);
+            await audioRef.current.play();
+            setPlayerStatus(true);
+        }
+      }
+
+      const seekSong = (e) => {
+        audioRef.current.currentTime = ((e.nativeEvent.offsetX / seekBg.current.offsetWidth)*audioRef.current.duration)
+      }
       useEffect(() => {
         setTimeout(() => {
 
@@ -56,7 +75,7 @@ const PlayerContextProvider = (props) => {
                 })
             }
 
-        },1000)
+        }, 1000)
     },[audioRef])
 
     const contextValue = {
@@ -68,7 +87,9 @@ const PlayerContextProvider = (props) => {
         playStatus,setPlayerStatus,
         time,setTime,
         play,pause,
-        playWithId
+        playWithId,
+        previous,next,
+        seekSong,
     }
 
     return (
