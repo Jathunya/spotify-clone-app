@@ -19,6 +19,7 @@
 
 #### 1. การออกแบบโครงสร้าง Component
 เริ่มจากการวางแผน "Component Tree" ก่อนเขียนโค้ดจริง โดยแยกส่วนอย่าง `Sidebar`, `NavButton` และ `TrackRow` ออกจากกันอย่างชัดเจน วิธีนี้ช่วยให้โค้ดสะอาด อ่านง่าย (Clean Code) และไม่เขียนโค้ดซ้ำซ้อน 
+<img width="1366" height="697" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/88090645-1c1b-4780-8f6d-e037c984f8dd" />
 
 #### 2. การจัดการ Layout ที่ซับซ้อน
 การทำ Spotify Layout สอนให้ดิฉันเข้าใจการจัดการ CSS ที่ซับซ้อนมากขึ้น เช่น การทำ Scrolling เฉพาะส่วนในขณะที่ Sidebar และแถบควบคุมเพลงยังคงอยู่กับที่ (Fixed) ซึ่งการใช้ Tailwind CSS v4 ช่วยให้เก็บรายละเอียดเล็ก ๆ น้อย ๆ อย่าง Hover Effect และ Transition ได้แม่นยำขึ้น
