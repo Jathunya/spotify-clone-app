@@ -1,16 +1,42 @@
-# React + Vite
+# Spotify Clone (Frontend Practice)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+โปรเจกต์นี้เป็นโปรเจกต์ส่วนตัวที่ดิฉันตั้งใจสร้างขึ้นเพื่อจำลองหน้าตาและฟังก์ชันพื้นฐานของ Spotify Web Player โดยเป้าหมายหลักคือการฝึกฝนการเขียนโค้ดที่มีโครงสร้างดี และการเก็บรายละเอียดงานดีไซน์ให้ใกล้เคียงกับงานระดับมืออาชีพมากที่สุดค่ะ
 
-Currently, two official plugins are available:
+## 🎨 ทำไมถึงเลือกทำโปรเจกต์นี้?
+เนื่องจากดิฉันให้ความสำคัญกับเรื่อง **Visual Balance** และ **ความละเอียดของ UI** จึงเลือก Spotify มาเป็นต้นแบบ เพราะเป็นแอปที่มีความโดดเด่นเรื่องการจัดการ Layout ที่ดูสบายตา โดยได้เน้นในจุดต่าง ๆ ดังนี้:
+* **Optical Spacing:** การจัดวางระยะห่างที่ไม่ได้อิงแค่ตัวเลขตามไม้บรรทัด แต่เน้นความสมดุลที่สายตามนุษย์มองแล้วรู้สึกพอดี
+* **Component-Based Thinking:** การแยกส่วนประกอบต่าง ๆ ของหน้าเว็บให้เป็นชิ้นส่วนเล็ก ๆ (Reusable Components) เพื่อให้ง่ายต่อการดูแลและนำไปใช้ซ้ำ
+* **Modern Tech Stack:** ทดลองใช้เครื่องมือใหม่ล่าสุดอย่าง React 19 และ Tailwind CSS v4
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ เครื่องมือที่เลือกใช้
+* **React 19** – ใช้ Feature ล่าสุดเพื่อประสิทธิภาพการทำงานที่ดียิ่งขึ้น
+* **Vite** – เพื่อความรวดเร็วในการพัฒนาและ Build งาน
+* **Tailwind CSS v4** – เครื่องมือหลักในการจัด Layout และคุมความเป๊ะของ UI
+* **React Router 7** – จัดการระบบ Navigation ภายในแอปให้ลื่นไหล
 
-## React Compiler
+## 🧠 วิธีคิดและ Logic ในการพัฒนา
+ในฐานะ Junior Developer ดิฉันให้ความสำคัญกับการวางรากฐานที่ดี ดังนี้ค่ะ:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### 1. การออกแบบโครงสร้าง Component
+เริ่มจากการวางแผน "Component Tree" ก่อนเขียนโค้ดจริง โดยแยกส่วนอย่าง `Sidebar`, `NavButton` และ `TrackRow` ออกจากกันอย่างชัดเจน วิธีนี้ช่วยให้โค้ดสะอาด อ่านง่าย (Clean Code) และไม่เขียนโค้ดซ้ำซ้อน 
 
-## Expanding the ESLint configuration
+#### 2. การจัดการ Layout ที่ซับซ้อน
+การทำ Spotify Layout สอนให้ดิฉันเข้าใจการจัดการ CSS ที่ซับซ้อนมากขึ้น เช่น การทำ Scrolling เฉพาะส่วนในขณะที่ Sidebar และแถบควบคุมเพลงยังคงอยู่กับที่ (Fixed) ซึ่งการใช้ Tailwind CSS v4 ช่วยให้เก็บรายละเอียดเล็ก ๆ น้อย ๆ อย่าง Hover Effect และ Transition ได้แม่นยำขึ้น
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### 3. การคิดในมุมมองผู้ใช้งาน (UX)
+เลือกใช้ React Router 7 เพื่อให้แอปมีความรู้สึกเหมือนเป็น Single Page Application (SPA) จริง ๆ การเปลี่ยนหน้าไปมาต้องรวดเร็วและต่อเนื่อง เพื่อประสบการณ์การใช้งานที่ดีที่สุด
+
+#### 4. มาตรฐานและความเรียบร้อยของโค้ด
+ใช้ **ESLint** เพื่อตรวจเช็คความเรียบร้อยของโค้ดอยู่เสมอ และพยายามใช้การตั้งชื่อตัวแปรหรือ Function ที่สื่อความหมายชัดเจน แม้ดิฉันจะยังไม่มีประสบการณ์ทำงานจริง แต่ก็พยายามฝึกฝนตัวเองตามมาตรฐานที่มืออาชีพใช้ค่ะ
+
+## 📚 การเรียนรู้และก้าวต่อไป (Next Steps)
+โปรเจกต์นี้ช่วยให้ดิฉันเห็นภาพรวมของการสร้าง UI ที่ซับซ้อนได้ชัดเจนขึ้น และดิฉันตั้งใจจะนำพื้นฐานเหล่านี้ไปต่อยอดศึกษาในหัวข้ออื่น ๆ เพื่อเตรียมความพร้อมสำหรับการทำงานจริง:
+* **Data Integration:** ศึกษาการรับ-ส่งข้อมูลผ่าน API เพื่อทำให้แอปแสดงข้อมูลที่เปลี่ยนแปลงได้จริงในอนาคต
+* **Type Safety:** ศึกษาการนำ TypeScript มาใช้ในโปรเจกต์ถัดไป เพื่อช่วยลดข้อผิดพลาดในโค้ดและทำให้การทำงานร่วมกับทีมมีประสิทธิภาพมากขึ้น
+
+---
+### 📦 วิธีการติดตั้งและรันโปรเจกต์
+1. Clone repository นี้ลงเครื่อง
+2. รันคำสั่ง `npm install`
+3. รันคำสั่ง `npm run dev`
+
