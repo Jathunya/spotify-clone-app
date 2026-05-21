@@ -1,6 +1,7 @@
 # Spotify Clone 
 
 โปรเจกต์นี้เป็นโปรเจกต์ส่วนตัวที่ดิฉันตั้งใจสร้างขึ้นเพื่อจำลองหน้าตาและฟังก์ชันพื้นฐานของ Spotify Web Player โดยเป้าหมายหลักคือการฝึกฝนการเขียนโค้ดที่มีโครงสร้างดี และการเก็บรายละเอียดงานดีไซน์ให้ใกล้เคียงกับงานระดับมืออาชีพมากที่สุดค่ะ
+<img width="1366" height="697" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/88090645-1c1b-4780-8f6d-e037c984f8dd" />
 
 ## 🎨 ทำไมถึงเลือกทำโปรเจกต์นี้?
 เนื่องจากดิฉันให้ความสำคัญกับเรื่อง **Visual Balance** และ **ความละเอียดของ UI** จึงเลือก Spotify มาเป็นต้นแบบ เพราะเป็นแอปที่มีความโดดเด่นเรื่องการจัดการ Layout ที่ดูสบายตา โดยได้เน้นในจุดต่าง ๆ ดังนี้:
@@ -9,27 +10,16 @@
 * **Modern Tech Stack:** ทดลองใช้เครื่องมือใหม่ล่าสุดอย่าง React 19 และ Tailwind CSS v4
 
 ## 🛠️ Tech Stack & Tools
-
-### Core Technologies
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-* **React 19:** เลือกใช้เวอร์ชันล่าสุดเพื่อประสิทธิภาพในการจัดการ Component และเตรียมความพร้อมสำหรับฟีเจอร์ใหม่ ๆ ในอนาคต
-
-![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-* **Vite:** ใช้เป็น Build Tool หลักเพื่อให้การพัฒนา (Development) และการรวมไฟล์ (Build) ทำได้รวดเร็วทันใจ
-
-### Styling & Routing
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-* **Tailwind CSS v4:** เครื่องมือหลักที่ดิฉันใช้ในการจัด Layout และควบคุมความละเอียดของ UI (Pixel-Perfect) ให้เป๊ะตามต้นฉบับ
-
-![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-* **React Router 7:** จัดการระบบ Navigation ภายในแอปพลิเคชัน เพื่อให้การเปลี่ยนหน้าลื่นไหลแบบไร้รอยต่อ
-
+* **React 19** – ใช้ Feature ล่าสุดเพื่อประสิทธิภาพการทำงานที่ดียิ่งขึ้น
+* **Vite** – เพื่อความรวดเร็วในการพัฒนาและ Build งาน
+* **Tailwind CSS v4** – เครื่องมือหลักในการจัด Layout และคุมความเป๊ะของ UI
+* **React Router 7** – จัดการระบบ Navigation ภายในแอปให้ลื่นไหล
+  
 ## 🧠 วิธีคิดและ Logic ในการพัฒนา
 ในฐานะ Junior Developer ดิฉันให้ความสำคัญกับการวางรากฐานที่ดี ดังนี้ค่ะ:
 
 #### 1. การออกแบบโครงสร้าง Component
 เริ่มจากการวางแผน "Component Tree" ก่อนเขียนโค้ดจริง โดยแยกส่วนอย่าง `Sidebar`, `NavButton` และ `TrackRow` ออกจากกันอย่างชัดเจน วิธีนี้ช่วยให้โค้ดสะอาด อ่านง่าย (Clean Code) และไม่เขียนโค้ดซ้ำซ้อน 
-<img width="1366" height="697" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/88090645-1c1b-4780-8f6d-e037c984f8dd" />
 
 #### 2. การจัดการ Layout ที่ซับซ้อน
 การทำ Spotify Layout สอนให้ดิฉันเข้าใจการจัดการ CSS ที่ซับซ้อนมากขึ้น เช่น การทำ Scrolling เฉพาะส่วนในขณะที่ Sidebar และแถบควบคุมเพลงยังคงอยู่กับที่ (Fixed) ซึ่งการใช้ Tailwind CSS v4 ช่วยให้เก็บรายละเอียดเล็ก ๆ น้อย ๆ อย่าง Hover Effect และ Transition ได้แม่นยำขึ้น
