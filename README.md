@@ -8,11 +8,21 @@
 * **Component-Based Thinking:** การแยกส่วนประกอบต่าง ๆ ของหน้าเว็บให้เป็นชิ้นส่วนเล็ก ๆ (Reusable Components) เพื่อให้ง่ายต่อการดูแลและนำไปใช้ซ้ำ
 * **Modern Tech Stack:** ทดลองใช้เครื่องมือใหม่ล่าสุดอย่าง React 19 และ Tailwind CSS v4
 
-## 🛠️ เครื่องมือที่เลือกใช้
-* **React 19** – ใช้ Feature ล่าสุดเพื่อประสิทธิภาพการทำงานที่ดียิ่งขึ้น
-* **Vite** – เพื่อความรวดเร็วในการพัฒนาและ Build งาน
-* **Tailwind CSS v4** – เครื่องมือหลักในการจัด Layout และคุมความเป๊ะของ UI
-* **React Router 7** – จัดการระบบ Navigation ภายในแอปให้ลื่นไหล
+## 🛠️ Tech Stack & Tools
+
+### Core Technologies
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+* **React 19:** เลือกใช้เวอร์ชันล่าสุดเพื่อประสิทธิภาพในการจัดการ Component และเตรียมความพร้อมสำหรับฟีเจอร์ใหม่ ๆ ในอนาคต
+
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+* **Vite:** ใช้เป็น Build Tool หลักเพื่อให้การพัฒนา (Development) และการรวมไฟล์ (Build) ทำได้รวดเร็วทันใจ
+
+### Styling & Routing
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+* **Tailwind CSS v4:** เครื่องมือหลักที่ดิฉันใช้ในการจัด Layout และควบคุมความละเอียดของ UI (Pixel-Perfect) ให้เป๊ะตามต้นฉบับ
+
+![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+* **React Router 7:** จัดการระบบ Navigation ภายในแอปพลิเคชัน เพื่อให้การเปลี่ยนหน้าลื่นไหลแบบไร้รอยต่อ
 
 ## 🧠 วิธีคิดและ Logic ในการพัฒนา
 ในฐานะ Junior Developer ดิฉันให้ความสำคัญกับการวางรากฐานที่ดี ดังนี้ค่ะ:
