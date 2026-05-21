@@ -1,43 +1,46 @@
-# Spotify Clone 
+# Spotify Clone
 
-โปรเจกต์นี้เป็นโปรเจกต์ส่วนตัวที่ดิฉันตั้งใจสร้างขึ้นเพื่อจำลองหน้าตาและฟังก์ชันพื้นฐานของ Spotify Web Player โดยเป้าหมายหลักคือการฝึกฝนการเขียนโค้ดที่มีโครงสร้างดี และการเก็บรายละเอียดงานดีไซน์ให้ใกล้เคียงกับงานระดับมืออาชีพมากที่สุดค่ะ
-<img width="1366" height="768" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/ec24dd9d-27af-46a5-bdc1-c6f9301d2aac" />
+This is a personal project where I set out to recreate the core interface and functionality of the Spotify Web Player. My primary goal was to practice writing well-structured code while maintaining a high level of design precision, similar to professional-grade applications.
 
-## 🎨 ทำไมถึงเลือกทำโปรเจกต์นี้?
-เนื่องจากดิฉันให้ความสำคัญกับเรื่อง **Visual Balance** และ **ความละเอียดของ UI** จึงเลือก Spotify มาเป็นต้นแบบ เพราะเป็นแอปที่มีความโดดเด่นเรื่องการจัดการ Layout ที่ดูสบายตา โดยได้เน้นในจุดต่าง ๆ ดังนี้:
-* **Optical Spacing:** การจัดวางระยะห่างที่ไม่ได้อิงแค่ตัวเลขตามไม้บรรทัด แต่เน้นความสมดุลที่สายตามนุษย์มองแล้วรู้สึกพอดี
-* **Component-Based Thinking:** การแยกส่วนประกอบต่าง ๆ ของหน้าเว็บให้เป็นชิ้นส่วนเล็ก ๆ (Reusable Components) เพื่อให้ง่ายต่อการดูแลและนำไปใช้ซ้ำ
-* **Modern Tech Stack:** ทดลองใช้เครื่องมือใหม่ล่าสุดอย่าง React 19 และ Tailwind CSS v4
+<img width="1366" height="768" alt="Spotify Clone Screenshot" src="https://github.com/user-attachments/assets/ec24dd9d-27af-46a5-bdc1-c6f9301d2aac" />
+
+## 🎨 Why this project?
+I’ve always been passionate about **Visual Balance** and **UI Detail**, which is why I chose Spotify as my reference. Its layout is known for being clean and immersive. In this project, I specifically focused on:
+
+* **Optical Spacing:** Going beyond fixed grid measurements to ensure the layout feels balanced and comfortable to the human eye.
+* **Component-Based Thinking:** Breaking down the interface into modular, reusable components to ensure the codebase is easy to maintain.
+* **Modern Tech Stack:** Experimenting with the latest tools, specifically React 19 and Tailwind CSS v4.
 
 ## 🛠️ Tech Stack & Tools
-* **React 19** – ใช้ Feature ล่าสุดเพื่อประสิทธิภาพการทำงานที่ดียิ่งขึ้น
-* **Vite** – เพื่อความรวดเร็วในการพัฒนาและ Build งาน
-* **Tailwind CSS v4** – เครื่องมือหลักในการจัด Layout และคุมความเป๊ะของ UI
-* **React Router 7** – จัดการระบบ Navigation ภายในแอปให้ลื่นไหล
+* **React 19** – Utilizing the latest features for better performance and smoother development.
+* **Vite** – Used as the build tool for a fast and efficient development workflow.
+* **Tailwind CSS v4** – The core tool for styling and achieving pixel-perfect UI precision.
+* **React Router 7** – Handling seamless and fluid client-side navigation.
   
-## 🧠 วิธีคิดและ Logic ในการพัฒนา
-ในฐานะ Junior Developer ดิฉันให้ความสำคัญกับการวางรากฐานที่ดี ดังนี้ค่ะ:
+## 🧠 Development Logic & Approach
+As a Junior Developer, I believe in building a solid foundation. Here is how I approached the development process:
 
-#### 1. การออกแบบโครงสร้าง Component
-เริ่มจากการวางแผน "Component Tree" ก่อนเขียนโค้ดจริง โดยแยกส่วนอย่าง `Sidebar`, `NavButton` และ `TrackRow` ออกจากกันอย่างชัดเจน วิธีนี้ช่วยให้โค้ดสะอาด อ่านง่าย (Clean Code) และไม่เขียนโค้ดซ้ำซ้อน 
+#### 1. Component Architecture
+I started by planning a "Component Tree" before writing any code. By separating elements like the `Sidebar`, `NavButton`, and `TrackRow`, I was able to keep the code clean (DRY principle) and easy to read.
 
-#### 2. การจัดการ Layout ที่ซับซ้อน
-การทำ Spotify Layout สอนให้ดิฉันเข้าใจการจัดการ CSS ที่ซับซ้อนมากขึ้น เช่น การทำ Scrolling เฉพาะส่วนในขณะที่ Sidebar และแถบควบคุมเพลงยังคงอยู่กับที่ (Fixed) ซึ่งการใช้ Tailwind CSS v4 ช่วยให้เก็บรายละเอียดเล็ก ๆ น้อย ๆ อย่าง Hover Effect และ Transition ได้แม่นยำขึ้น
+#### 2. Managing Complex Layouts
+Building the Spotify layout helped me master complex CSS behaviors, such as creating independent scrolling areas while keeping the sidebar and playback controls fixed. Tailwind CSS v4 allowed me to fine-tune small details like hover effects and transitions with great accuracy.
 
-#### 3. การคิดในมุมมองผู้ใช้งาน (UX)
-เลือกใช้ React Router 7 เพื่อให้แอปมีความรู้สึกเหมือนเป็น Single Page Application (SPA) จริง ๆ การเปลี่ยนหน้าไปมาต้องรวดเร็วและต่อเนื่อง เพื่อประสบการณ์การใช้งานที่ดีที่สุด
+#### 3. User Experience (UX) Focus
+I implemented React Router 7 to give the app a true Single Page Application (SPA) feel. I wanted the transitions between views to be instantaneous and smooth, providing a continuous experience for the user.
 
-#### 4. มาตรฐานและความเรียบร้อยของโค้ด
-ใช้ **ESLint** เพื่อตรวจเช็คความเรียบร้อยของโค้ดอยู่เสมอ และพยายามใช้การตั้งชื่อตัวแปรหรือ Function ที่สื่อความหมายชัดเจน แม้ดิฉันจะยังไม่มีประสบการณ์ทำงานจริง แต่ก็พยายามฝึกฝนตัวเองตามมาตรฐานที่มืออาชีพใช้ค่ะ
+#### 4. Code Standards & Quality
+I consistently used **ESLint** to maintain code quality and focused on using descriptive names for variables and functions. Even though I am just starting my career, I strive to follow industry-standard practices in every line of code I write.
 
-## 📚 การเรียนรู้และก้าวต่อไป (Next Steps)
-โปรเจกต์นี้ช่วยให้ดิฉันเห็นภาพรวมของการสร้าง UI ที่ซับซ้อนได้ชัดเจนขึ้น และดิฉันตั้งใจจะนำพื้นฐานเหล่านี้ไปต่อยอดศึกษาในหัวข้ออื่น ๆ เพื่อเตรียมความพร้อมสำหรับการทำงานจริง:
-* **Data Integration:** ศึกษาการรับ-ส่งข้อมูลผ่าน API เพื่อทำให้แอปแสดงข้อมูลที่เปลี่ยนแปลงได้จริงในอนาคต
-* **Type Safety:** ศึกษาการนำ TypeScript มาใช้ในโปรเจกต์ถัดไป เพื่อช่วยลดข้อผิดพลาดในโค้ดและทำให้การทำงานร่วมกับทีมมีประสิทธิภาพมากขึ้น
+## 📚 Learning Paths & Next Steps
+This project gave me a much clearer picture of how to build complex UIs. I plan to take these foundational skills and explore the following areas next:
+
+* **Data Integration:** Learning how to fetch and manage real-time data through APIs.
+* **Type Safety:** Integrating TypeScript into my future projects to reduce errors and improve team collaboration.
 
 ---
-### 📦 วิธีการติดตั้งและรันโปรเจกต์
-1. Clone repository นี้ลงเครื่อง
-2. รันคำสั่ง `npm install`
-3. รันคำสั่ง `npm run dev`
+### 📦 Setup & Installation
+1. Clone this repository to your local machine.
+2. Run `npm install` to install dependencies.
+3. Run `npm run dev` to start the development server.
 
